@@ -1,0 +1,20 @@
+<div class="container">
+  <h2><%= @task.title %></h2>
+  <br>
+
+  <p><%= @task.details %></p>
+  <br>
+
+  <div class="link-to">
+    <h4>
+      <%= link_to edit_task_path(@task) do %>
+      <i class="far fa-edit"></i>
+      <% end %>
+    </h4>
+  </div>
+  <br>
+
+  <div class="btn btn-outline-primary">
+    <%= link_to 'Back to list', tasks_path %>
+  </div>
+</div>
